@@ -21,8 +21,11 @@
     <p>Exemplo de subtitulo. </p>
     <script>
         window.alert('Minha primeira mensagem!')
-        window.confirm('Está gostando de Javascript?');
-        window.prompt('Qual é o seu nome?');
+        var opcao = window.confirm('Está gostando de Javascript?');
+        if (opcao != undefined) alert(opcao)
+
+        var nome = window.prompt('Qual é o seu nome?');
+        if (nome != undefined) alert(nome);
     </script>
 </body>
 </html>
